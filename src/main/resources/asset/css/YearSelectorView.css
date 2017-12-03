@@ -1,0 +1,23 @@
+.background {
+    -fx-background-color: #303030;
+}
+
+.label {
+    -fx-text-fill: #E0E0E0;
+    -fx-font-family: "Microsoft YaHei";
+}
+
+.label-title {
+    -fx-font-size: 30px;
+}
+
+.label-year {
+    -fx-font-size: 20px;
+    -fx-text-fill: #606060;
+    -fx-padding: 12px;
+}
+
+.label-year:hover {
+    -fx-text-fill: #303030;
+    -fx-background-color: #E0E0E0;
+}

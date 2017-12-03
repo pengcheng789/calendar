@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Menu?>
+<?import javafx.scene.control.MenuBar?>
+<?import javafx.scene.control.MenuItem?>
+<?import javafx.scene.layout.BorderPane?>
+
+<BorderPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="600.0" prefWidth="900.0" styleClass="background" stylesheets="@../css/RootLayout.css" xmlns="http://javafx.com/javafx/9" xmlns:fx="http://javafx.com/fxml/1" fx:controller="top.pengcheng789.calendar.view.RootLayoutController">
+   <top>
+      <MenuBar styleClass="background" BorderPane.alignment="CENTER">
+         <menus>
+            <Menu mnemonicParsing="false" text="功能">
+              <items>
+                <MenuItem fx:id="clockMenuItem" mnemonicParsing="false" onAction="#handleClockMenuItemClicked" text="闹钟" />
+              </items>
+            </Menu>
+         </menus>
+      </MenuBar>
+   </top>
+</BorderPane>

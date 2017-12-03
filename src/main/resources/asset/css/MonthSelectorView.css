@@ -1,0 +1,12 @@
+.background {
+    -fx-background-color: #303030;
+}
+
+.label {
+    -fx-text-fill: #E0E0E0;
+    -fx-font-family: "Microsoft YaHei";
+}
+
+.label-title {
+    -fx-font-size: 30px;
+}

@@ -1,0 +1,25 @@
+.background {
+    -fx-background-color: #303030;
+}
+
+.label {
+    -fx-text-fill: #E0E0E0;
+    -fx-font-family: "Microsoft YaHei";
+}
+
+.label-head {
+    -fx-font-size: 50px;
+}
+
+.grid-date {
+    -fx-font-size: 20px;
+    -fx-text-alignment: center;
+}
+
+.label-lunar {
+    -fx-font-size: 15px;
+}
+
+.label-fix-month {
+    -fx-text-fill: #606060;
+}

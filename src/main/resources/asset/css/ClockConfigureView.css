@@ -1,0 +1,58 @@
+.background {
+    -fx-background-color: #303030;
+}
+
+.label {
+    -fx-text-fill: #E0E0E0;
+    -fx-font-family: "Microsoft YaHei";
+}
+
+.label-title {
+    -fx-padding: 10px;
+    -fx-font-size: 25px;
+}
+
+.label-action {
+    -fx-padding: 15px;
+    -fx-font-size: 25px;
+    -fx-border-width: 2px;
+    -fx-border-color: #E0E0E0;
+}
+
+.label-action:hover {
+    -fx-padding: 15px;
+    -fx-font-size: 25px;
+    -fx-border-width: 2px;
+    -fx-border-color: #E0E0E0;
+    -fx-text-fill: #303030;
+    -fx-background-color: #E0E0E0;
+}
+
+.label-time-setup {
+    -fx-font-size: 25px;
+    -fx-padding: 10px;
+}
+
+.label-count {
+    -fx-font-size: 20px;
+    -fx-padding: 15px;
+    -fx-pref-width: 250px;
+    -fx-text-alignment: right;
+}
+
+.label-clock {
+    -fx-font-size: 25px;
+    -fx-padding: 15px;
+}
+
+.label-clock-delete {
+    -fx-font-size: 25px;
+    -fx-padding: 15px;
+    -fx-text-fill: #606060;
+}
+
+.label-clock-delete:hover {
+    -fx-font-size: 25px;
+    -fx-padding: 15px;
+    -fx-text-fill: #E0E0E0;
+}

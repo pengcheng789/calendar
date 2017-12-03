@@ -1,0 +1,45 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.ColumnConstraints?>
+<?import javafx.scene.layout.GridPane?>
+<?import javafx.scene.layout.RowConstraints?>
+<?import javafx.scene.layout.VBox?>
+
+<AnchorPane prefHeight="600.0" prefWidth="300.0" styleClass="background" stylesheets="@../css/TimeLayout.css" xmlns="http://javafx.com/javafx/9" xmlns:fx="http://javafx.com/fxml/1" fx:controller="top.pengcheng789.calendar.view.TimeLayoutController">
+   <children>
+      <VBox maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="600.0" prefWidth="300.0">
+         <children>
+            <Label fx:id="titleTimeLabel" styleClass="label-title-time" text="23:59:52" />
+            <GridPane prefHeight="600.0" prefWidth="300.0">
+               <columnConstraints>
+                  <ColumnConstraints hgrow="SOMETIMES" maxWidth="95.0" minWidth="10.0" prefWidth="41.0" />
+                  <ColumnConstraints hgrow="SOMETIMES" maxWidth="159.0" minWidth="10.0" prefWidth="97.0" />
+                  <ColumnConstraints hgrow="SOMETIMES" maxWidth="170.0" minWidth="10.0" prefWidth="162.0" />
+               </columnConstraints>
+               <rowConstraints>
+                  <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+                  <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+                  <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+                  <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+                  <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+                  <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+               </rowConstraints>
+               <children>
+                  <Label styleClass="label-title" text="北京" GridPane.columnIndex="1" />
+                  <Label fx:id="beijingTimeLabel" styleClass="label-time" text="11月29日 23:59:52" GridPane.columnIndex="2" />
+                  <Label styleClass="label-title" text="伦敦" GridPane.columnIndex="1" GridPane.rowIndex="1" />
+                  <Label fx:id="londonTimeLabel" styleClass="label-time" text="11月29日 23:59:52" GridPane.columnIndex="2" GridPane.rowIndex="1" />
+                  <Label styleClass="label-title" text="纽约" GridPane.columnIndex="1" GridPane.rowIndex="2" />
+                  <Label fx:id="newYorkTimeLabel" styleClass="label-time" text="11月29日 23:59:52" GridPane.columnIndex="2" GridPane.rowIndex="2" />
+                  <Label styleClass="label-title" text="旧金山" GridPane.columnIndex="1" GridPane.rowIndex="3" />
+                  <Label fx:id="sanFranciscoTimeLabel" styleClass="label-time" text="11月29日 23:59:52" GridPane.columnIndex="2" GridPane.rowIndex="3" />
+                  <Label styleClass="label-title" text="夏威夷" GridPane.columnIndex="1" GridPane.rowIndex="4" />
+                  <Label fx:id="hawaiiTimeLabel" styleClass="label-time" text="11月29日 23:59:52" GridPane.columnIndex="2" GridPane.rowIndex="4" />
+               </children>
+            </GridPane>
+         </children>
+      </VBox>
+   </children>
+</AnchorPane>

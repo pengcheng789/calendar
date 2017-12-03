@@ -1,0 +1,117 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import java.lang.String?>
+<?import javafx.geometry.Insets?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.layout.BorderPane?>
+<?import javafx.scene.layout.ColumnConstraints?>
+<?import javafx.scene.layout.GridPane?>
+<?import javafx.scene.layout.HBox?>
+<?import javafx.scene.layout.RowConstraints?>
+
+<BorderPane prefHeight="600.0" prefWidth="600.0" styleClass="background" stylesheets="@../css/DateLayout.css" xmlns="http://javafx.com/javafx/9" xmlns:fx="http://javafx.com/fxml/1" fx:controller="top.pengcheng789.calendar.view.DateLayoutController">
+   <top>
+      <HBox prefHeight="100.0" prefWidth="200.0" styleClass="label-head" BorderPane.alignment="CENTER">
+         <children>
+            <Label fx:id="yearLabel" onMouseClicked="#handleClickedYearAction" text="2017" />
+            <Label text=" - " />
+            <Label fx:id="monthLabel" onMouseClicked="#handleClickedMonthAction" text="11" />
+            <Label text="   " />
+            <Label onMouseClicked="#handleLastMonthAction" text="🔼" />
+            <Label text="   " />
+            <Label onMouseClicked="#handleNextMonthAction" text="🔽" />
+            <Label text="   " />
+            <Label onMouseClicked="#handleResetAction" text="🔄" />
+         </children>
+         <padding>
+            <Insets left="20.0" top="10.0" />
+         </padding>
+      </HBox>
+   </top>
+   <center>
+      <GridPane fx:id="gridPane" styleClass="grid-date" BorderPane.alignment="TOP_LEFT">
+         <columnConstraints>
+            <ColumnConstraints hgrow="SOMETIMES" minWidth="10.0" prefWidth="100.0" />
+            <ColumnConstraints hgrow="SOMETIMES" minWidth="10.0" prefWidth="100.0" />
+            <ColumnConstraints hgrow="SOMETIMES" minWidth="10.0" prefWidth="100.0" />
+            <ColumnConstraints hgrow="SOMETIMES" minWidth="10.0" prefWidth="100.0" />
+            <ColumnConstraints hgrow="SOMETIMES" minWidth="10.0" prefWidth="100.0" />
+            <ColumnConstraints hgrow="SOMETIMES" minWidth="10.0" prefWidth="100.0" />
+            <ColumnConstraints hgrow="SOMETIMES" minWidth="10.0" prefWidth="100.0" />
+         </columnConstraints>
+         <rowConstraints>
+            <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+            <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+            <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+            <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+            <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+            <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+            <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+         </rowConstraints>
+         <children>
+            <Label alignment="CENTER" contentDisplay="CENTER" text="周一" GridPane.halignment="CENTER" />
+            <Label text="周二 " GridPane.columnIndex="1" GridPane.halignment="CENTER" />
+            <Label text="周三" GridPane.columnIndex="2" GridPane.halignment="CENTER" />
+            <Label text="周四" GridPane.columnIndex="3" GridPane.halignment="CENTER" />
+            <Label text="周五" GridPane.columnIndex="4" GridPane.halignment="CENTER" />
+            <Label text="周六" GridPane.columnIndex="5" GridPane.halignment="CENTER" />
+            <Label text="周日" GridPane.columnIndex="6" GridPane.halignment="CENTER" />
+            <BorderPane prefHeight="200.0" prefWidth="200.0" GridPane.columnIndex="2" GridPane.rowIndex="1">
+               <center>
+                  <Label text="1" BorderPane.alignment="CENTER" />
+               </center>
+               <bottom>
+                  <Label styleClass="label-lunar" text="廿二" BorderPane.alignment="CENTER" />
+               </bottom>
+               <GridPane.margin>
+                  <Insets bottom="10.0" left="10.0" right="10.0" top="10.0" />
+               </GridPane.margin>
+            </BorderPane>
+            <BorderPane prefHeight="200.0" prefWidth="200.0" GridPane.rowIndex="2">
+               <center>
+                  <Label text="6" BorderPane.alignment="CENTER" />
+               </center>
+               <bottom>
+                  <Label styleClass="label-lunar" text="廿二" BorderPane.alignment="CENTER" />
+               </bottom>
+               <GridPane.margin>
+                  <Insets bottom="10.0" left="10.0" right="10.0" top="10.0" />
+               </GridPane.margin>
+            </BorderPane>
+            <BorderPane prefHeight="200.0" prefWidth="200.0" styleClass="label-fix-month" GridPane.rowIndex="1">
+               <center>
+                  <Label styleClass="label-fix-month" text="29" BorderPane.alignment="CENTER" />
+               </center>
+               <bottom>
+                  <Label text="廿二" BorderPane.alignment="CENTER">
+                     <styleClass>
+                        <String fx:value="label-lunar" />
+                        <String fx:value="label-fix-month" />
+                     </styleClass>
+                  </Label>
+               </bottom>
+               <GridPane.margin>
+                  <Insets bottom="10.0" left="10.0" right="10.0" top="10.0" />
+               </GridPane.margin>
+            </BorderPane>
+            <BorderPane prefHeight="200.0" prefWidth="200.0" styleClass="label-fix-month" GridPane.columnIndex="1" GridPane.rowIndex="1">
+               <center>
+                  <Label styleClass="label-fix-month" text="30" BorderPane.alignment="CENTER" />
+               </center>
+               <bottom>
+                  <Label text="廿二" BorderPane.alignment="CENTER">
+                     <styleClass>
+                        <String fx:value="label-lunar" />
+                        <String fx:value="label-fix-month" />
+                     </styleClass>
+                  </Label>
+               </bottom>
+               <GridPane.margin>
+                  <Insets bottom="10.0" left="10.0" right="10.0" top="10.0" />
+               </GridPane.margin>
+            </BorderPane>
+            <Label GridPane.columnIndex="3" GridPane.rowIndex="4" />
+         </children>
+      </GridPane>
+   </center>
+</BorderPane>
