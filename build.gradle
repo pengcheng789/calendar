@@ -1,0 +1,22 @@
+group 'top.pengcheng789'
+version '1.0'
+
+apply plugin: 'java'
+
+sourceCompatibility = 1.8
+targetCompatibility = 1.8
+
+repositories {
+    maven { url 'http://maven.aliyun.com/nexus/content/groups/public/' }
+}
+
+jar {
+    manifest {
+        attributes 'Main-Class': 'top.pengcheng789.calendar.MainApp'
+    }
+}
+
+dependencies {
+    compile 'com.google.guava:guava:23.5-jre'
+    compile 'org.controlsfx:controlsfx:8.40.14'
+}

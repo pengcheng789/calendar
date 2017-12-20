@@ -27,6 +27,7 @@ target/
 # IDEA #
 .idea/
 *.iml
+out/
 
 # Eclipse #
 .settings/
@@ -37,3 +38,7 @@ Servers/
 
 # SceneBuilder #
 src/main/java/**/*.fxml
+
+# Gradle
+build/
+.gradle/
