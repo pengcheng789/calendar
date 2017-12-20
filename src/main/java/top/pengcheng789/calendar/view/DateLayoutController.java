@@ -119,7 +119,8 @@ public class DateLayoutController {
      */
     private void showYearAndMonth(LocalDate localDate) {
         yearLabel.setText(String.valueOf(localDate.getYear()));
-        monthLabel.setText(String.valueOf(localDate.getMonthValue()));
+        monthLabel.setText((localDate.getMonthValue() > 10 ? "" : "0")
+                + String.valueOf(localDate.getMonthValue()));
     }
 
     /**
