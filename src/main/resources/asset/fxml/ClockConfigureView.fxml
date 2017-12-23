@@ -9,7 +9,7 @@
 <?import javafx.scene.layout.RowConstraints?>
 <?import javafx.scene.layout.VBox?>
 
-<BorderPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="400.0" prefWidth="400.0" styleClass="background" stylesheets="@../css/ClockConfigureView.css" xmlns="http://javafx.com/javafx/9" xmlns:fx="http://javafx.com/fxml/1" fx:controller="top.pengcheng789.calendar.view.ClockConfigureController">
+<BorderPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="400.0" prefWidth="400.0" styleClass="background" stylesheets="@../css/ClockConfigureView.css" xmlns="http://javafx.com/javafx/1.8" xmlns:fx="http://javafx.com/fxml/1" fx:controller="top.pengcheng789.calendar.view.ClockConfigureController">
    <center>
       <BorderPane maxWidth="-Infinity" minWidth="-Infinity" prefHeight="400.0" prefWidth="250.0" styleClass="background" BorderPane.alignment="CENTER">
          <top>

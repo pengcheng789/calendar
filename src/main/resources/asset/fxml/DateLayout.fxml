@@ -9,7 +9,7 @@
 <?import javafx.scene.layout.HBox?>
 <?import javafx.scene.layout.RowConstraints?>
 
-<BorderPane prefHeight="600.0" prefWidth="600.0" styleClass="background" stylesheets="@../css/DateLayout.css" xmlns="http://javafx.com/javafx/9" xmlns:fx="http://javafx.com/fxml/1" fx:controller="top.pengcheng789.calendar.view.DateLayoutController">
+<BorderPane prefHeight="600.0" prefWidth="600.0" styleClass="background" stylesheets="@../css/DateLayout.css" xmlns="http://javafx.com/javafx/1.8" xmlns:fx="http://javafx.com/fxml/1" fx:controller="top.pengcheng789.calendar.view.DateLayoutController">
    <top>
       <HBox prefHeight="100.0" prefWidth="200.0" styleClass="label-head" BorderPane.alignment="CENTER">
          <children>
