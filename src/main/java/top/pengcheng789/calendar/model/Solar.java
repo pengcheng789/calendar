@@ -1,7 +1,5 @@
 package top.pengcheng789.calendar.model;
 
-import java.nio.channels.SocketChannel;
-
 /**
  * @author pen
  */
