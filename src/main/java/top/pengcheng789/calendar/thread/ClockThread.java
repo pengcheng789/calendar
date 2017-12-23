@@ -60,8 +60,9 @@ public class ClockThread extends Thread {
             try {
                 Thread.sleep(1_000);
             } catch (InterruptedException e) {
-                System.out.println("闹钟线程异常！");
-                throw new RuntimeException(e);
+                System.out.println("闹钟线程停止运行！");
+                break;
+                // throw new RuntimeException(e);
             }
         }
     }

@@ -54,8 +54,9 @@ public class TimeLayoutController {
                 try {
                     Thread.sleep(1_000);
                 } catch (InterruptedException e) {
-                    System.out.println("时间显示异常！");
-                    throw new RuntimeException(e);
+                    System.out.println("时间线程停止运行！");
+                    break;
+                    //throw new RuntimeException(e);
                 }
             }
         });
